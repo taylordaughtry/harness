@@ -1,0 +1,9 @@
+# Build Tools and Scripts
+node_modules/
+
+# Local Testing
+public_html/*.html
+public_html/assets/
+
+# System Files
+.DS_Store
