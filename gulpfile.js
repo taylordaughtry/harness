@@ -33,6 +33,7 @@ gulp.task('scripts', function() {
 gulp.task('styles', function() {
 	return gulp.src([
 			basePaths.src + '/css/variables.styl',
+			basePaths.src + '/harness/css/mixins.styl',
 			basePaths.src + '/harness/css/base.styl',
 			basePaths.src + '/css/mixins.styl',
 			basePaths.src + '/css/components/*.styl',
@@ -62,15 +63,14 @@ gulp.task('watch', function() {
 	var watchPaths = [
 		basePaths.src + '/harness/js/*.js',
 		basePaths.src + '/js/*.js',
-		basePaths.src  +'/harness/css/base.styl',
 		basePaths.src + '/css/variables.styl',
+		basePaths.src + '/harness/css/mixins.styl',
+		basePaths.src + '/harness/css/base.styl',
 		basePaths.src + '/css/mixins.styl',
 		basePaths.src + '/css/components/*.styl',
 		basePaths.src + '/css/modules/*.styl',
 		basePaths.src + '/images/**/*'
 	];
-
-	gulp.task('build');
 
 	gulp.watch(watchPaths, gulp.task('build'));
 });
