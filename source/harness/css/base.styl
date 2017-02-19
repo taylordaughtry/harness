@@ -2,10 +2,10 @@
 	# Layout
 \*------------------------------------*/
 
-.container
-	margin: 0 auto;
-	max-width: $maxWidth;
-	padding: $bumperPadding
+.o-container
+	padding-left: $bumperPadding
+	padding-right: $bumperPadding
+	centeredBlock($maxWidth)
 
 
 
@@ -69,7 +69,7 @@ h1,h2,h3,h4,h5,h6
 	background: $buttonBackground
 	border-radius: $buttonRounded
 	color: $buttonColor
-	display: block
+	display: inline-block
 	font-family: $buttonFont
 	font-size: $buttonFontSize
 	font-weight: $buttonFontWeight
@@ -81,3 +81,70 @@ h1,h2,h3,h4,h5,h6
 	&:active
 		background: $buttonBackgroundActive
 		color: $white
+
+
+
+
+
+/*------------------------------------*\
+	# Grids
+\*------------------------------------*/
+
+.o-row
+	inlineRow()
+
+.o-mobile-1-2
+	inlineColumn(1, 2, 4%)
+.o-mobile-1-3
+	inlineColumn(1, 3, 4%)
+.o-mobile-1-4
+	inlineColumn(1, 4, 4%)
+.o-mobile-1-5
+	inlineColumn(1, 5, 4%)
+.o-mobile-1-6
+	inlineColumn(1, 6, 4%)
+
+@media screen and (min-width: 480px)
+	.o-row--landscape
+		inlineRow()
+
+	.o-mobile-1-2
+		inlineColumn(1, 2, 4%)
+	.o-mobile-1-3
+		inlineColumn(1, 3, 4%)
+	.o-mobile-1-4
+		inlineColumn(1, 4, 4%)
+	.o-mobile-1-5
+		inlineColumn(1, 5, 4%)
+	.o-mobile-1-6
+		inlineColumn(1, 6, 4%)
+
+@media screen and (min-width: 768px)
+	.o-row--landscape
+		inlineRow()
+
+	.o-tablet-1-2
+		inlineColumn(1, 2, 4%)
+	.o-tablet-1-3
+		inlineColumn(1, 3, 4%)
+	.o-tablet-1-4
+		inlineColumn(1, 4, 4%)
+	.o-tablet-1-5
+		inlineColumn(1, 5, 4%)
+	.o-tablet-1-6
+		inlineColumn(1, 6, 4%)
+
+@media screen and (min-width: 999px)
+	.o-row--desktop
+		inlineRow()
+
+	.o-desktop-1-2
+		inlineColumn(1, 2, 4%)
+	.o-desktop-1-3
+		inlineColumn(1, 3, 4%)
+	.o-desktop-1-4
+		inlineColumn(1, 4, 4%)
+	.o-desktop-1-5
+		inlineColumn(1, 5, 4%)
+	.o-desktop-1-6
+		inlineColumn(1, 6, 4%)
