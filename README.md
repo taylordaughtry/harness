@@ -1,6 +1,6 @@
 # Harness
 
-**A featherweight framework that seeks to make native javascript more accessible.**
+**A featherweight framework that seeks to make modern development more accessible.**
 
 Harness is built for the modern web. Older browsers have gone, and most modern browsers are relatively good at supporting javascript interactions. As a result, developers are working with javascript frameworks that have hundreds of lines of workarounds for situations that will likely never happen today. Enter: Harness.
 
