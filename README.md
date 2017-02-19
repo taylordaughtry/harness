@@ -23,6 +23,4 @@ Harness supports modern browsers, including IE 10 or later. If you're looking fo
 
 ## Usage
 
-Harness will seem very familiar to jQuery users. It intentionally uses the `$` global to prevent developers from attempting to use both frameworks.
-
 For specific usage information, see the [Official Harness Wiki](https://github.com/taylordaughtry/harness/wiki).
