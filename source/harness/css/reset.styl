@@ -1,0 +1,150 @@
+*,
+*:before,
+*:after
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+html
+	-moz-text-size-adjust: 100%
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
+	font-size: 62.5%
+
+body
+	position: relative
+
+embed,
+img,
+object,
+video
+	max-width: 100%
+
+svg
+	overflow: hidden
+
+embed,
+object
+	height: 100%
+
+audio,
+canvas,
+video
+	display: inline-block
+
+b,
+strong
+	font-weight: bold
+
+
+canvas
+	-ms-touch-action: double-tap-zoom
+
+iframe
+	border: 0
+	margin-bottom: 0
+
+figure
+	position: relative
+	text-align: center
+	img
+		margin-bottom: 0
+	figcaption
+		line-height: inherit
+
+img
+	display: inline-block
+
+sub,
+sup
+	font-size: 0.7em
+	line-height: 0
+	margin-left: 0.2em
+	position: relative
+	vertical-align: baseline
+
+sub
+	bottom: -0.25em
+
+sup
+	top: -1em
+
+::-moz-selection
+	background: @background
+	color: @color
+	text-shadow: none
+
+::selection
+	background: @background
+	color: @color
+	text-shadow: none
+
+small
+	font-weight: normal
+	font-size: @smallFontSize
+
+dfn,
+em,
+i,
+var
+	font-style: italic
+
+blockquote,
+q
+	font: inherit
+	cite
+		font: inherit
+
+blockquote
+	padding: inherit
+	margin-bottom: 0
+	cite
+		display: block
+
+del,
+s,
+strike
+	text-decoration: line-through
+
+a
+	&:focus
+		outline: thin dotted
+	img
+		border: 0
+
+hr
+	border: 0
+	display: block
+	height: 1px
+
+address
+	font: inherit
+	margin-bottom: 0
+
+dl,
+ol,
+ul
+	margin-bottom: 0
+
+ol,
+ul
+	ol,
+	ul
+		margin-bottom: 0
+
+ul
+	ul
+		list-style-type: circle
+		ul
+			list-style-type: square
+
+ol
+	list-style-type: decimal
+
+nav
+	ol,
+	ul
+		list-style: none
+		margin: 0
+		li
+			margin-bottom: 0
