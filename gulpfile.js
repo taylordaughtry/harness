@@ -17,9 +17,9 @@ gulp.task('clean', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-			basePaths.src + '/harness/harness.js',
+			basePaths.src + '/harness/js/harness.js',
 			basePaths.src + '/js/*.js',
-			basePaths.src + '/harness/boot.js'
+			basePaths.src + '/harness/js/boot.js'
 		])
 		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'))
@@ -32,6 +32,8 @@ gulp.task('scripts', function() {
 
 gulp.task('styles', function() {
 	return gulp.src([
+			basePaths.src + '/css/variables.styl',
+			basePaths.src + '/harness/css/base.styl',
 			basePaths.src + '/css/mixins.styl',
 			basePaths.src + '/css/components/*.styl',
 			basePaths.src + '/css/modules/*.styl',
@@ -58,8 +60,10 @@ gulp.task('build', gulp.series('clean', 'scripts', 'styles', 'images'));
 
 gulp.task('watch', function() {
 	var watchPaths = [
-		basePaths.src + '/harness/*.js',
+		basePaths.src + '/harness/js/*.js',
 		basePaths.src + '/js/*.js',
+		basePaths.src  +'/harness/css/base.styl',
+		basePaths.src + '/css/variables.styl',
 		basePaths.src + '/css/mixins.styl',
 		basePaths.src + '/css/components/*.styl',
 		basePaths.src + '/css/modules/*.styl',
